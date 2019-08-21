@@ -1,17 +1,42 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
+  "name": "module-item-description",
+  "description": "> Project description",
   "author": "",
-  "license": "",
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    "build": "webpack --mode production",
+    "start": "nodemon server/server.js",
+    "react-dev": "webpack -d --watch"
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
-  }
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "prop-types": "^15.7.2",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  },
+  "version": "1.0.0",
+  "main": "(server.js)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shazamazon/module-item-description.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shazamazon/module-item-description/issues"
+  },
+  "homepage": "https://github.com/shazamazon/module-item-description#readme"
 }
