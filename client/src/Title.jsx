@@ -6,15 +6,25 @@ const Title = (props) => {
     <div id="des_title">
         {props.item.title}
     </div>
-    <div id="des_rating">
-        {props.item.rating}
-        {props.item.numOfRatings}
+    <div id="des_reviewsRatingsQuestions">
+      <span id="des_rating">
+        <span id="des_stars">
+          {/* {props.item.rating} */}
+          <img src="https://shazamazon.s3.us-east-2.amazonaws.com/furniture/des_rating.png"></img>
+        </span>
+        <span id="des_numOfRatings">
+          {props.item.numOfRatings} customer reviews
+        </span>
+      </span>
+      <span id="des_numOfQuestions">
+          {props.item.numOfQuestions} answered questions
+      </span>
     </div>
-    <div id="des_numOfQuestions">
-        {props.item.numOfQuestions}
+    <div id="des_listPrice">
+      List Price: <span id="des_crossedOut">{(props.item.price * 1.2).toFixed(2)}</span>
     </div>
     <div id="des_price">
-        {props.item.price}
+        Price: <span id="des_money">${props.item.price}</span> <span className="des_blue">FREE INSTANT MANIFESTATION</span> on orders over $25 or get <span className="des_bold">Free Delivery by Owl</span> with <span className="des_blue">Shazamazon Prime</span>
     </div>
     <div id="des_options">
         {props.item.otherColors}
