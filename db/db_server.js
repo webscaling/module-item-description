@@ -11,18 +11,32 @@ db.once('open', function() {
 });
 
 
+// const schema = new mongoose.Schema({
+//   _id: mongoose.Schema.Types.ObjectId,
+//   productId: Number,
+//   title: String,
+//   rating: Number,
+//   numOfRatings: Number,
+//   numOfQuestions: Number,
+//   price: Number,
+//   otherColors: Array,
+//   sellingPoints: Array
+
+// }, {collection: 'Item Detail Module'});
+
 const schema = new mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  productId: Number,
-  title: String,
-  rating: Number,
-  numOfRatings: Number,
+  ProductId: Number,
+  ItemName: String,
+  Price: Number,
+  Rating: Number,
+  Category: String,
+  Photo: Array,
+  sellingPoints: Array,
   numOfQuestions: Number,
-  price: Number,
-  otherColors: Array,
-  sellingPoints: Array
-
-}, {collection: 'Item Detail Module'});
+  numOfRatings: Number,
+  ratingImage: String
+ }, {collection: 'item-description-module' });
 
 const itemDetail = mongoose.model('itemDetail', schema);
 
