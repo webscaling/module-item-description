@@ -1,4 +1,6 @@
 import React from 'react';
+import Price_Over from './Price_Over.jsx';
+import Price_Under from './Price_Under.jsx';
 
 
 const Title = (props) => {
@@ -24,14 +26,7 @@ const Title = (props) => {
     <div id="des_listPrice">
       List Price: <span id="des_crossedOut">{(props.item.Price * 1.2).toFixed(2)}</span>
     </div>
-    <div id="des_price">
-      {/* {(props.item.Price < 25)
-        ? */}
-        Price: <span id="des_money">${parseFloat(props.item.Price).toFixed(2)} </span> <span className="des_blue">FREE INSTANT MANIFESTATION</span> on orders over $25 or get <span className="des_bold">Free Delivery by Owl</span> with <span className="des_blue">Shazamazon Prime</span>
-        {/* :
-        Price: <span id="des_money">${parseFloat(props.item.Price).toFixed(2)}</span> <span className="des_bold">FREE Delivery by Owl. </span> <span className="des_blue">Details</span> & <span className="des_blue">FREE Returns</span>
-       } */}
-    </div>
+      {(props.item.Price < 25) ? (<Price_Under item={props.item} />) : (<Price_Over item={props.item} />)}
     <div id="des_options">
         {props.item.otherColors}
     </div>

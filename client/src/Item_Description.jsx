@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Title from './Title.jsx';
+import Price_Over from './Price_Over.jsx';
+import Price_Under from './Price_Under.jsx';
 
 class App extends React.Component {
   constructor(props) {

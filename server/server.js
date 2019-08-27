@@ -12,33 +12,6 @@ app.use(bodyParser.json());
 
 
 /* Routes */
-
-// app.post('/itemDescription', (req, res) => {
-//   console.log(req.body);
-//   const itemD = new itemDetail({
-//     _id: new mongoose.Types.ObjectId(),
-//     productId: req.body.productId,
-//     title: req.body.title,
-//     rating: req.body.rating,
-//     numOfRatings: req.body.numOfRatings,
-//     numOfQuestions: req.body.numOfQuestions,
-//     price: req.body.price,
-//     otherColors: req.body.otherColors,
-//     sellingPoints: req.body.sellingPoints
-//   });
-//   itemD.save()
-//     .then(result => {
-//       res.status(201).send({
-//         message: 'handling POST requests to /item',
-//         createProduct: result
-//       });
-//     })
-//     .catch(err => {
-//       console.err(err);
-//       res.status(500).send( {error: err} );
-//     });
-// });
-
 app.post('/itemDescription', (req, res) => {
   const item = new itemDetail({
     _id: new mongoose.Types.ObjectId(),
@@ -57,7 +30,6 @@ app.post('/itemDescription', (req, res) => {
     .then(result => {
       res.status(201).send({
         message: 'handling POST requests to /itemDescription'
-        // createdProduct: result
       });
     })
     .catch(err => {
