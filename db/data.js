@@ -1,4 +1,6 @@
 const axios = require('axios');
+const setRatingImage = require('./data_helpers/setRatingImage');
+const makeSellingPointsArr = require('./data_helpers/makeSellingPointsArr')
 
 let data = [
   {
@@ -996,59 +998,8 @@ const sellingPoints = [
   "Stupefy!",
   "IT SEEMED THAT Moody's rolling eye was magical and could see out of the back of his head",
   "HE TURNED TO STARE unseeingly at the unicorn"
-]
+];
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
-const makeSellingPointsArr = function(sourceArr) {
-  let count = getRandomInt(2, 8);
-  let sellingPoints = [];
-  while (count >= 0) {
-    sellingPoints.push(sourceArr[Math.floor(Math.random() * Math.floor(sourceArr.length - 1))])
-    count--;
-  }
-  return [...new Set(sellingPoints)];
-};
-
-const setRatingImage = function(rating) {
-  if (rating < 0.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/00stars.png";
-  }
-  if (rating < 0.75) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/05stars.png";
-  }
-  if (rating < 1.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/10stars.png";
-  }
-  if (rating < 1.75) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/15stars.png";
-  }
-  if (rating < 2.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/20stars.png";
-  }
-  if (rating < 2.75) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/25stars.png";
-  }
-  if (rating < 3.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/30stars.png";
-  }
-  if (rating < 3.75) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/35stars.png";
-  }
-  if (rating < 4.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/40stars.png";
-  }
-  if (rating < 4.75) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/45stars.png";
-  }
-  if (rating < 5.25) {
-    return "https://shazamazon.s3.us-east-2.amazonaws.com/stars/50stars.png";
-  }
-};
 
 const updateData = function(callback) {
   callback(
