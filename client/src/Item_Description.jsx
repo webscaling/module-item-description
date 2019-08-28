@@ -2,30 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Title from './Title.jsx';
+import Price_Over from './Price_Over.jsx';
+import Price_Under from './Price_Under.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       selectedItem: {
-        "sellingPoints":[],
-        "otherColors": [],
-        "productId": 2,
-        "rating": 0,
-        "numOfRatings": 0,
+        "ProductId": 2,
+        "Category": '',
+        "ItemName": '',
+        "Price": 0,
+        "Rating": 0,
+        "Photo": [],
+        "sellingPoints": [],
         "numOfQuestions": 0,
-        "title": ''
+        "numOfRatings": 0,
+        "ratingImage": ''
       },
 
     }
   }
 
   componentDidMount() {
-    axios.get('/item')
+    axios.get('/itemDescription')
     .then((response) => {
       this.setState({
         magic: response.data,
-        selectedItem: response.data[2]
+        selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
       }, () => console.log(this.state.selectedItem))
     })
   }

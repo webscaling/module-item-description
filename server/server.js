@@ -12,38 +12,36 @@ app.use(bodyParser.json());
 
 
 /* Routes */
-
-app.post('/item', (req, res) => {
-  console.log(req.body);
-  const itemD = new itemDetail({
+app.post('/itemDescription', (req, res) => {
+  const item = new itemDetail({
     _id: new mongoose.Types.ObjectId(),
-    productId: req.body.productId,
-    title: req.body.title,
-    rating: req.body.rating,
-    numOfRatings: req.body.numOfRatings,
+    ProductId: req.body.ProductId,
+    ItemName: req.body.ItemName,
+    Price: req.body.Price,
+    Rating: req.body.Rating,
+    Category: req.body.Category,
+    Photo: req.body.Photo,
+    sellingPoints: req.body.sellingPoints,
     numOfQuestions: req.body.numOfQuestions,
-    price: req.body.price,
-    otherColors: req.body.otherColors,
-    sellingPoints: req.body.sellingPoints
+    numOfRatings: req.body.numOfRatings,
+    ratingImage: req.body.ratingImage
   });
-  itemD.save()
+  item.save()
     .then(result => {
       res.status(201).send({
-        message: 'handling POST requests to /item',
-        createProduct: result
+        message: 'handling POST requests to /itemDescription'
       });
     })
     .catch(err => {
-      console.err(err);
-      res.status(500).send( {error: err} );
+      console.error(err);
+      res.status(500).send({ error: err });
     });
-});
+ });
 
-app.get('/item', (req, res) => {
+app.get('/itemDescription', (req, res) => {
   itemDetail.find(req.query.category === undefined ? null : { category: req.query.category })
     .exec()
     .then(doc => {
-      console.log(doc);
       res.status(200).send(doc);
     })
     .catch(err => {
