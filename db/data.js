@@ -1016,7 +1016,7 @@ const updateData = function(callback) {
 const toDb = (obj => {
   axios({
     method: 'post',
-    url: 'http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription/',
+    url: 'http://localhost:1337/itemDescription/',
     data: obj
   })
     .then(data =>
