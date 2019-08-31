@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 /* Routes */
-app.post('http://localhost:1337/itemDescription/', (req, res) => {
+app.post('/itemDescription', (req, res) => {
   const item = new itemDetail({
     _id: new mongoose.Types.ObjectId(),
     ProductId: req.body.ProductId,
