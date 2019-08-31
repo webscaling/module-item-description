@@ -1,6 +1,7 @@
 const axios = require('axios');
 const setRatingImage = require('./data_helpers/setRatingImage');
 const makeSellingPointsArr = require('./data_helpers/makeSellingPointsArr')
+const { dropCollection } = require('./db_server.js');
 
 let data = [
   {
@@ -1027,9 +1028,13 @@ const toDb = (obj => {
 });
 
 const addDataToDB = function() {
-  data.forEach(object => {
-    toDb(object);
-  });
+  dropCollection(
+    function() {
+      data.forEach(object => {
+        toDb(object);
+      });
+    }
+  );
 };
 
 updateData(addDataToDB);

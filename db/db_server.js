@@ -23,8 +23,18 @@ const schema = new mongoose.Schema({
   numOfQuestions: Number,
   numOfRatings: Number,
   ratingImage: String
- }, {collection: 'item-description-module' });
+}, {collection: 'item-description-module' });
 
 const itemDetail = mongoose.model('itemDetail', schema);
 
-module.exports = { itemDetail };
+const dropCollection = function(callback) {
+  db.dropCollection('item-description-module', function (err, result) {
+    if (err) {
+      console.log('error delete collection', err);
+    } else {
+      console.log('delete collection success');
+      callback();
+    }
+  });
+};
+module.exports = { itemDetail, dropCollection };
