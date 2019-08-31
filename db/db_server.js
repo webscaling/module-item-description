@@ -1,13 +1,14 @@
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 var Schema = mongoose.Schema;
+var { password } = require('../db/password.js')
 
-mongoose.connect('mongodb://localhost/Shazamazon', {useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://WhitneyLee:${password}@cluster0-3kkci.mongodb.net/Shazamazon?retryWrites=true&w=majority`, {useNewUrlParser: true});
 
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  console.log('Database is connected!');
+  console.log('connected successfully to server');
 });
 
 
@@ -31,6 +32,7 @@ const dropCollection = function(callback) {
   db.dropCollection('item-description-module', function (err, result) {
     if (err) {
       console.log('error delete collection', err);
+      callback();
     } else {
       console.log('delete collection success');
       callback();
