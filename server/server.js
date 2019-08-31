@@ -39,7 +39,7 @@ app.post('/itemDescription', (req, res) => {
  });
 
 app.get('/itemDescription', (req, res) => {
-  itemDetail.find(req.query.category === undefined ? null : { category: req.query.category })
+  itemDetail.find(req.query.ProductId === undefined ? null : { ProductId: req.query.ProductId })
     .exec()
     .then(doc => {
       res.status(200).send(doc);
