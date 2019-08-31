@@ -28,6 +28,7 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('/itemDescription')
     .then((response) => {
+      console.log(response.data)
       this.setState({
         magic: response.data,
         selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
