@@ -10,7 +10,7 @@ module.exports = {
       key: '~/.ssh/FEC.pem',
       ref: 'origin/master',
       repo: 'https://github.com/shazamazon/module-item-description.git',
-      path: '/home/ubuntu',
+      path: '/home/ubuntu/module-item-description',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
