@@ -64,6 +64,21 @@ const Title = (props) => {
         className="Yellow"
         src={props.item.Photo[0]}>
         </img>
+
+        <img id="des_orangePhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Orange"
+        src={props.item.Photo[0]}>
+        </img>
+
+        <img id="des_purplePhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Purple"
+        src={props.item.Photo[0]}>
+        </img>
+
       </span>
       </div>
     </div>
