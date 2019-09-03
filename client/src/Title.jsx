@@ -33,7 +33,11 @@ const Title = (props) => {
     <div id="des_colors">
       <span id="des_colorChoice" className="des_bold">Color: </span>
       <span id="des_colorChoice">Red</span>
+      <div>
+      <span id="des_colorPhotos">
       <img id="des_redPhoto" src={props.item.Photo[0]}></img>
+      </span>
+      </div>
     </div>
     <div id="des_sellingPoints">
       <ul>
