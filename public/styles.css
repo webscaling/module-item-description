@@ -50,6 +50,7 @@
     justify-content: space-between;
     border-bottom: 1px solid rgb(202, 197, 197);
     margin-bottom: 15px;
+    padding-bottom: 4px;
 }
 
 #des_rating {
@@ -118,9 +119,20 @@
     font-size: 14px;
 }
 
+#des_colorPhotos {
+    display: flex;
+    justify-content: flex-start;
+}
+
 #des_redPhoto {
     height: 40px;
-    color: red;
+    border: 1px lightgrey;
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+#des_redPhoto.hover {
+    border: 1px darkgray;
 }
 
 .des_sellingPoint {
