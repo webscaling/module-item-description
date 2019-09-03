@@ -16,12 +16,13 @@ const Title = (props) => {
           <img id="des_stars_img" src={props.item.ratingImage}></img>
           <img id="des_expand_arrow" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/expand_arrow.png"></img>
         </span>
-        <span id="des_numOfRatings">
+        <span id="des_numOfRatings" onClick={props.reviewsOnClick}>
           {props.item.numOfRatings} customer reviews
-          <img id="des_grey_bar" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/lil_grey_bar.png"></img>
         </span>
       </span>
-      <span id="des_numOfQuestions">
+      <span className="des_grey">   |
+      </span>
+      <span id="des_numOfQuestions" onClick={props.questionsOnClick}>
           {props.item.numOfQuestions} answered questions
       </span>
     </div>
