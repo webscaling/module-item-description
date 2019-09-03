@@ -21,9 +21,12 @@ class App extends React.Component {
         "numOfRatings": 0,
         "ratingImage": ''
       },
+      color: undefined,
     }
-    this.reviewsOnClick.bind(this);
-    this.questionsOnClick.bind(this);
+    this.reviewsOnClick = this.reviewsOnClick.bind(this);
+    this.questionsOnClick = this.questionsOnClick.bind(this);
+    this.colorPhotosOnHover = this.colorPhotosOnHover.bind(this);
+    this.colorPhotosOnLeave = this.colorPhotosOnLeave.bind(this);
   }
 
   componentDidMount() {
@@ -46,6 +49,20 @@ class App extends React.Component {
     console.log("goes to questions section");
   }
 
+  colorPhotosOnHover(event) {
+    event.preventDefault();
+    this.setState({
+      color: event.target.className,
+    });
+  }
+
+  colorPhotosOnLeave(event) {
+    event.preventDefault();
+    this.setState({
+      color: undefined,
+    });
+  }
+
   render() {
     return (
       <div id="des_itemDescriptionModule">
@@ -53,6 +70,9 @@ class App extends React.Component {
           item={this.state.selectedItem}
           reviewsOnClick={this.reviewsOnClick}
           questionsOnClick={this.questionsOnClick}
+          colorPhotosOnHover={this.colorPhotosOnHover}
+          colorPhotosOnLeave={this.colorPhotosOnLeave}
+          color={this.state.color}
         />
       </div>
     )

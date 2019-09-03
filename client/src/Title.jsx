@@ -34,10 +34,36 @@ const Title = (props) => {
       {(props.item.Price < 25) ? (<Price_Under item={props.item} />) : (<Price_Over item={props.item} />)}
     <div id="des_colors">
       <span id="des_colorChoice" className="des_bold">Color: </span>
-      <span id="des_colorChoice">Red</span>
+      <span id="des_colorChoice">{props.color}</span>
       <div>
       <span id="des_colorPhotos">
-      <img id="des_redPhoto" src={props.item.Photo[0]}></img>
+        <img id="des_redPhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Red"
+        src={props.item.Photo[0]}>
+        </img>
+
+        <img id="des_bluePhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Blue"
+        src={props.item.Photo[0]}>
+        </img>
+
+        <img id="des_greenPhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Green"
+        src={props.item.Photo[0]}>
+        </img>
+
+        <img id="des_yellowPhoto"
+        onMouseOver={(e) => props.colorPhotosOnHover(e)}
+        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+        className="Yellow"
+        src={props.item.Photo[0]}>
+        </img>
       </span>
       </div>
     </div>
