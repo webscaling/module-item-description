@@ -30,8 +30,10 @@ const Title = (props) => {
       List Price: <span id="des_crossedOut">{(props.item.Price * 1.2).toFixed(2)}</span>
     </div>
       {(props.item.Price < 25) ? (<Price_Under item={props.item} />) : (<Price_Over item={props.item} />)}
-    <div id="des_options">
-        {props.item.otherColors}
+    <div id="des_colors">
+      <span id="des_colorChoice" className="des_bold">Color: </span>
+      <span id="des_colorChoice">Red</span>
+      <img id="des_redPhoto" src={props.item.Photo[0]}></img>
     </div>
     <div id="des_sellingPoints">
       <ul>

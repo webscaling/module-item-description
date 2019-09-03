@@ -114,6 +114,15 @@
     color: rgb(153, 4, 4);
 }
 
+#des_colorChoice {
+    font-size: 14px;
+}
+
+#des_redPhoto {
+    height: 40px;
+    color: red;
+}
+
 .des_sellingPoint {
     font-size: 14px;
 }
