@@ -8,7 +8,7 @@ const getRandomInt = function(min, max) {
 };
 
 const makeColorArray = function(sourceArr) {
-  let count = getRandomInt(2, 4);
+  let count = getRandomInt(2, 5);
   let colors = [];
   while (count >= 0) {
     colors.push(colorArr[Math.floor(Math.random() * Math.floor(sourceArr.length - 1))])
