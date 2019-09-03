@@ -125,14 +125,14 @@
 }
 
 #des_redPhoto {
-    height: 40px;
-    border: 1px lightgrey;
-    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
-    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+    height: 50px;
+    border: 3px lightgrey;
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
 }
 
 #des_redPhoto.hover {
-    border: 1px darkgray;
+    border: 3px darkgray;
 }
 
 .des_sellingPoint {
