@@ -66,12 +66,14 @@
 #des_numOfRatings {
     color: royalblue;
     font-size: 15px;
+    padding-left: 30px;
 }
 
 #des_numOfRatings:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
     font-size: 15px;
+    padding-left: 30px;
 }
 
 #des_stars_img {
@@ -117,7 +119,7 @@
 }
 
 #des_colorChoice {
-    font-size: 14px;
+    font-size: 13px;
     padding-bottom: 5px;
 }
 
@@ -128,13 +130,13 @@
 
 #des_redPhoto {
     height: 50px;
-    border: 7px lightgrey;
     -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
+    border: 2px solid lightgrey;
 }
 
-#des_redPhoto.hover {
-    border: 3px darkgray;
+#des_redPhoto:hover {
+    border: 2px solid darkgray;
 }
 
 .des_sellingPoint {
@@ -157,4 +159,6 @@
 .des_grey {
     font-size: 18px;
     color: rgb(172, 170, 170);
+    margin-right: 15px;
+    margin-left: 15px;
 }
