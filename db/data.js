@@ -951,6 +951,16 @@ let data = [
   }
 ];
 
+// const makeRedImage = function(imageURL) {
+//   new Konva.Image.fromURL(imageURL, function(image){
+//     layer.add(image);
+//     image.cache();
+//     image.filters([Konva.Filtrs.Grayscale]);
+//     layer.draw();
+//   })
+
+// }
+
 const sellingPoints = [
   "Ordinary Wizarding Levels",
   "Weasleys' Wizard Wheezes",
