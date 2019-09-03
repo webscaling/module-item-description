@@ -19,7 +19,8 @@ class App extends React.Component {
         "sellingPoints": [],
         "numOfQuestions": 0,
         "numOfRatings": 0,
-        "ratingImage": ''
+        "ratingImage": '',
+        "colorChoices": []
       },
       color: undefined,
     }
@@ -35,7 +36,7 @@ class App extends React.Component {
       this.setState({
         magic: response.data,
         selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
-      })
+      }, () => (console.log(this.state.selectedItem)))
     })
   }
 
