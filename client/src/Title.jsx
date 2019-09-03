@@ -37,7 +37,15 @@ const Title = (props) => {
       <span id="des_colorChoice">{props.color}</span>
       <div>
       <span id="des_colorPhotos">
-        <img id="des_redPhoto"
+        {props.item.colorChoices.map((color) => (
+          <img id={color.id}
+          onMouseOver={(e) => props.colorPhotosOnHover(e)}
+          onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+          className={color.name}
+          src={props.item.Photo[0]}>
+          </img>
+        ))}
+        {/* <img id="des_redPhoto"
         onMouseOver={(e) => props.colorPhotosOnHover(e)}
         onMouseOut={(e) => props.colorPhotosOnLeave(e)}
         className="Red"
@@ -77,7 +85,7 @@ const Title = (props) => {
         onMouseOut={(e) => props.colorPhotosOnLeave(e)}
         className="Purple"
         src={props.item.Photo[0]}>
-        </img>
+        </img> */}
 
       </span>
       </div>
