@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/itemDescription')
+    axios.get('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription')
     .then((response) => {
       this.setState({
         magic: response.data,
