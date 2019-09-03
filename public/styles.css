@@ -31,10 +31,10 @@
 #des_itemDescriptionModule {
     font-family: "Amazon Ember";
     display: flex;
-    width: 31%;
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
+    width: 31%
 }
 
 #des_title {
@@ -120,12 +120,12 @@
 
 #des_colorChoice {
     font-size: 13px;
-    padding-bottom: 5px;
 }
 
 #des_colorPhotos {
     display: flex;
     justify-content: flex-start;
+    margin-top: 7px;
 }
 
 #des_redPhoto {
@@ -133,10 +133,46 @@
     -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
     border: 2px solid lightgrey;
+    margin-right: 20px;
 }
 
 #des_redPhoto:hover {
-    border: 2px solid darkgray;
+    border: 2px solid rgb(119, 118, 118);
+}
+
+#des_bluePhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
+    filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
+    border: 2px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_bluePhoto:hover {
+    border: 2px solid rgb(119, 118, 118);
+}
+
+#des_greenPhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(500%) contrast(0.8);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(500%) contrast(0.8);
+    border: 2px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_greenPhoto:hover {
+    border: 2px solid rgb(119, 118, 118);
+}
+
+#des_yellowPhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    border: 2px solid lightgrey;
+}
+
+#des_yellowPhoto:hover {
+    border: 2px solid rgb(119, 118, 118);
 }
 
 .des_sellingPoint {
@@ -153,7 +189,7 @@
 }
 
 .des_bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .des_grey {
