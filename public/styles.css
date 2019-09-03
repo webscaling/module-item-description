@@ -71,6 +71,15 @@
     height: 20px;
 }
 
+#des_expand_arrow {
+    height: 20px;
+}
+
+#des_grey_bar {
+    height: 20px;
+}
+
+
 #des_numOfQuestions {
     color: royalblue;
     font-size: 15px;

@@ -14,9 +14,11 @@ const Title = (props) => {
       <span id="des_rating">
         <span id="des_stars">
           <img id="des_stars_img" src={props.item.ratingImage}></img>
+          <img id="des_expand_arrow" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/expand_arrow.png"></img>
         </span>
         <span id="des_numOfRatings">
           {props.item.numOfRatings} customer reviews
+          <img id="des_grey_bar" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/lil_grey_bar.png"></img>
         </span>
       </span>
       <span id="des_numOfQuestions">
