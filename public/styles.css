@@ -105,6 +105,7 @@
 
 #des_price {
     font-size: 14px;
+    padding-bottom: 10px;
     /* display: flex;
     flex-direction: row;
     justify-content: space-between; */
@@ -117,6 +118,7 @@
 
 #des_colorChoice {
     font-size: 14px;
+    padding-bottom: 5px;
 }
 
 #des_colorPhotos {
@@ -126,7 +128,7 @@
 
 #des_redPhoto {
     height: 50px;
-    border: 3px lightgrey;
+    border: 7px lightgrey;
     -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
 }
