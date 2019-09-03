@@ -47,7 +47,7 @@
 #des_reviewsRatingsQuestions{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid rgb(202, 197, 197);
     margin-bottom: 15px;
 }
@@ -67,6 +67,12 @@
     font-size: 15px;
 }
 
+#des_numOfRatings:hover {
+    color: rgb(204, 131, 48);
+    text-decoration: underline;
+    font-size: 15px;
+}
+
 #des_stars_img {
     height: 20px;
 }
@@ -75,13 +81,15 @@
     height: 20px;
 }
 
-#des_grey_bar {
-    height: 20px;
-}
-
 
 #des_numOfQuestions {
     color: royalblue;
+    font-size: 15px;
+}
+
+#des_numOfQuestions:hover {
+    color: rgb(204, 131, 48);
+    text-decoration: underline;
     font-size: 15px;
 }
 
@@ -114,6 +122,16 @@
     color: royalblue;
 }
 
+.des_blue:hover {
+    color: rgb(204, 131, 48);
+    text-decoration: underline;
+}
+
 .des_bold {
     font-weight: bold;
+}
+
+.des_grey {
+    font-size: 18px;
+    color: rgb(172, 170, 170);
 }

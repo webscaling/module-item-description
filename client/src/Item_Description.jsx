@@ -22,23 +22,38 @@ class App extends React.Component {
         "ratingImage": ''
       },
     }
+    this.reviewsOnClick.bind(this);
+    this.questionsOnClick.bind(this);
   }
 
   componentDidMount() {
     axios.get('/itemDescription')
     .then((response) => {
-      console.log(response.data)
       this.setState({
         magic: response.data,
         selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
-      }, () => console.log(this.state.selectedItem))
+      })
     })
+  }
+
+  reviewsOnClick(event) {
+    event.preventDefault();
+    console.log("goes to reviews section");
+  }
+
+  questionsOnClick(event) {
+    event.preventDefault();
+    console.log("goes to questions section");
   }
 
   render() {
     return (
       <div id="des_itemDescriptionModule">
-        <Title item={this.state.selectedItem}/>
+        <Title
+          item={this.state.selectedItem}
+          reviewsOnClick={this.reviewsOnClick}
+          questionsOnClick={this.questionsOnClick}
+        />
       </div>
     )
   }
