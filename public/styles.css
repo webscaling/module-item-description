@@ -47,7 +47,7 @@
 #des_reviewsRatingsQuestions{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 1px solid rgb(202, 197, 197);
     margin-bottom: 15px;
     padding-bottom: 4px;
@@ -56,7 +56,7 @@
 #des_rating {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #des_stars {
@@ -65,15 +65,15 @@
 
 #des_numOfRatings {
     color: royalblue;
-    font-size: 15px;
-    padding-left: 30px;
+    font-size: 14px;
+    padding-left: 5px;
 }
 
 #des_numOfRatings:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
-    font-size: 15px;
-    padding-left: 30px;
+    font-size: 14px;
+    padding-left: 5px;
     cursor: pointer;
 }
 
@@ -88,13 +88,13 @@
 
 #des_numOfQuestions {
     color: royalblue;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #des_numOfQuestions:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
 }
 
