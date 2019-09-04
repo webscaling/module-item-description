@@ -184,7 +184,7 @@
 
 #des_yellowPhoto {
     height: 50px;
-    -webkit-filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
     border: 2px solid lightgrey;
     margin-right: 20px;
@@ -210,7 +210,7 @@
 
 #des_invisiblePhoto {
     height: 50px;
-    -webkit-filter: grayscale(100%) brightness(100%) sepia(0%) hue-rotate(50deg) saturate(0%) contrast(0);
+    -webkit-filter: grayscale(100%) brightness(200%) sepia(0%) hue-rotate(50deg) saturate(0%) contrast(0);
     filter: grayscale(100%) brightness(100%) sepia(0%) hue-rotate(50deg) saturate(0%) contrast(0);
     border: 2px solid lightgrey;
     margin-right: 20px;
