@@ -133,7 +133,8 @@
     height: 50px;
     -webkit-filter: invert(40%) grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_redImgBorder {
@@ -141,6 +142,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_redImgBorder:hover {
@@ -152,7 +155,8 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_blueImgBorder {
@@ -160,6 +164,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_blueImgBorder:hover {
@@ -171,7 +177,8 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(250%) contrast(1.4);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(300%) contrast(0.8);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_purpleImgBorder {
@@ -179,6 +186,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_purpleImgBorder:hover {
@@ -190,7 +199,8 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
     filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_greenImgBorder {
@@ -198,6 +208,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_greenImgBorder:hover {
@@ -209,7 +221,8 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_yellowImgBorder {
@@ -217,6 +230,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_yellowImgBorder:hover {
@@ -228,7 +243,8 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-25deg) saturate(350%) contrast(1);
     filter: grayscale(100%) brightness(70%) sepia(95%) hue-rotate(-30deg) saturate(400%) contrast(0.8);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_orangeImgBorder {
@@ -236,6 +252,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_orangeImgBorder:hover {
@@ -247,7 +265,8 @@
     height: 50px;
     -webkit-filter: brightness(100000%);
     filter: brightness(100000%);
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_invisibleImgBorder {
@@ -255,6 +274,8 @@
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
+    margin-right: 10px;
+    margin-left:10px;
 }
 
 #des_invisibleImgBorder:hover {
