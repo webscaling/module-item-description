@@ -14,6 +14,8 @@ const Title = (props) => {
       <span id="des_rating">
         <span id="des_stars">
           <img id="des_stars_img" src={props.item.ratingImage}></img>
+        </span>
+        <span>
           <img id="des_expand_arrow" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/expand_arrow.png"></img>
         </span>
         <span id="des_numOfRatings" onClick={props.reviewsOnClick}>
@@ -30,8 +32,22 @@ const Title = (props) => {
       List Price: <span id="des_crossedOut">{(props.item.Price * 1.2).toFixed(2)}</span>
     </div>
       {(props.item.Price < 25) ? (<Price_Under item={props.item} />) : (<Price_Over item={props.item} />)}
-    <div id="des_options">
-        {props.item.otherColors}
+    <div id="des_colors">
+      <span id="des_colorChoice" className="des_bold">Color: </span>
+      <span id="des_colorChoice">{props.color}</span>
+      <div>
+      <span id="des_colorPhotos">
+        {props.item.colorChoices.map((color) => (
+          <img id={color.id}
+          onMouseOver={(e) => props.colorPhotosOnHover(e)}
+          onMouseOut={(e) => props.colorPhotosOnLeave(e)}
+          className={color.name}
+          key={color.id}
+          src={props.item.Photo[0]}>
+          </img>
+        ))}
+      </span>
+      </div>
     </div>
     <div id="des_sellingPoints">
       <ul>

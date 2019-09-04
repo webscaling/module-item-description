@@ -31,7 +31,6 @@
 #des_itemDescriptionModule {
     font-family: "Amazon Ember";
     display: flex;
-    width: 31%;
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
@@ -47,15 +46,16 @@
 #des_reviewsRatingsQuestions{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-bottom: 1px solid rgb(202, 197, 197);
     margin-bottom: 15px;
+    padding-bottom: 4px;
 }
 
 #des_rating {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #des_stars {
@@ -64,13 +64,16 @@
 
 #des_numOfRatings {
     color: royalblue;
-    font-size: 15px;
+    font-size: 14px;
+    padding-left: 5px;
 }
 
 #des_numOfRatings:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 14px;
+    padding-left: 5px;
+    cursor: pointer;
 }
 
 #des_stars_img {
@@ -84,13 +87,14 @@
 
 #des_numOfQuestions {
     color: royalblue;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #des_numOfQuestions:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 #des_listPrice {
@@ -104,6 +108,7 @@
 
 #des_price {
     font-size: 14px;
+    padding-bottom: 10px;
     /* display: flex;
     flex-direction: row;
     justify-content: space-between; */
@@ -112,6 +117,121 @@
 #des_money {
     font-size: 18px;
     color: rgb(153, 4, 4);
+}
+
+#des_colorChoice {
+    font-size: 13px;
+}
+
+#des_colorPhotos {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 7px;
+}
+
+#des_redPhoto {
+    height: 50px;
+    -webkit-filter: invert(40%) grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
+    filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_redPhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_bluePhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
+    filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_bluePhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_purplePhoto {
+    height: 50px;
+    -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(250%) contrast(1.4);
+    filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(300%) contrast(0.8);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_purplePhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_greenPhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
+    filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_greenPhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_yellowPhoto {
+    height: 50px;
+    -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_yellowPhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_orangePhoto {
+    height: 50px;
+    -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-25deg) saturate(350%) contrast(1);
+    filter: grayscale(100%) brightness(70%) sepia(95%) hue-rotate(-30deg) saturate(400%) contrast(0.8);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_orangePhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
+}
+
+#des_invisiblePhoto {
+    height: 50px;
+    -webkit-filter: brightness(10000%);
+    filter: brightness(10000%);
+    padding:1px;
+    border: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+#des_invisiblePhoto:hover {
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
+    cursor: pointer;
 }
 
 .des_sellingPoint {
@@ -125,13 +245,16 @@
 .des_blue:hover {
     color: rgb(204, 131, 48);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .des_bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .des_grey {
     font-size: 18px;
     color: rgb(172, 170, 170);
+    margin-right: 15px;
+    margin-left: 15px;
 }

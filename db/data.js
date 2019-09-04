@@ -1,6 +1,7 @@
 const axios = require('axios');
 const setRatingImage = require('./data_helpers/setRatingImage');
 const makeSellingPointsArr = require('./data_helpers/makeSellingPointsArr')
+const makeColorArray = require('./data_helpers/makeColorArray')
 const { dropCollection } = require('./db_server.js');
 
 let data = [
@@ -951,6 +952,16 @@ let data = [
   }
 ];
 
+// const makeRedImage = function(imageURL) {
+//   new Konva.Image.fromURL(imageURL, function(image){
+//     layer.add(image);
+//     image.cache();
+//     image.filters([Konva.Filtrs.Grayscale]);
+//     layer.draw();
+//   })
+
+// }
+
 const sellingPoints = [
   "Ordinary Wizarding Levels",
   "Weasleys' Wizard Wheezes",
@@ -1001,7 +1012,6 @@ const sellingPoints = [
   "HE TURNED TO STARE unseeingly at the unicorn"
 ];
 
-
 const updateData = function(callback) {
   callback(
     data.map(object => {
@@ -1009,6 +1019,7 @@ const updateData = function(callback) {
       object.numOfRatings = Math.floor(Math.random() * Math.floor(60));
       object.sellingPoints = makeSellingPointsArr(sellingPoints);
       object.ratingImage = setRatingImage(object.Rating);
+      object.colorChoices = makeColorArray();
     })
   );
 }
