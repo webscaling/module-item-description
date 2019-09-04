@@ -38,7 +38,7 @@ const Title = (props) => {
       <div>
       <span id="des_colorPhotos">
         {props.item.colorChoices.map((color) => (
-          <span id={color.borderId}>
+          <span id={color.spanId}>
           <img id={color.id}
           onMouseOver={(e) => props.colorPhotosOnHover(e)}
           onMouseOut={(e) => props.colorPhotosOnLeave(e)}
