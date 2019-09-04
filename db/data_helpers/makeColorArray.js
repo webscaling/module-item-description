@@ -7,11 +7,11 @@ const getRandomInt = function(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-const makeColorArray = function(sourceArr) {
+const makeColorArray = function() {
   let count = getRandomInt(2, 5);
   let colors = [];
   while (count >= 0) {
-    colors.push(colorArr[Math.floor(Math.random() * Math.floor(sourceArr.length))]);
+    colors.push(colorArr[Math.floor(Math.random() * Math.floor(colorArr.length))]);
     count--;
   }
   return [...new Set(colors)];

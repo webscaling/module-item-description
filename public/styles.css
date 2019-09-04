@@ -210,8 +210,8 @@
 
 #des_invisiblePhoto {
     height: 50px;
-    -webkit-filter: brightness(2000%);
-    filter: brightness(2000%);
+    -webkit-filter: brightness(10000%);
+    filter: brightness(10000%);
     border: 2px solid lightgrey;
     margin-right: 20px;
 }
