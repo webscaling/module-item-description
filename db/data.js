@@ -1019,7 +1019,7 @@ const updateData = function(callback) {
       object.numOfRatings = Math.floor(Math.random() * Math.floor(60));
       object.sellingPoints = makeSellingPointsArr(sellingPoints);
       object.ratingImage = setRatingImage(object.Rating);
-      object.colorChoices = makeColorArray(colors);
+      object.colorChoices = makeColorArray();
     })
   );
 }
