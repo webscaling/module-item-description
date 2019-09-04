@@ -133,28 +133,36 @@
     height: 50px;
     -webkit-filter: invert(40%) grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_redPhoto:hover {
-    padding:1px;
+#des_redImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_redImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
+
+
 
 #des_bluePhoto {
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_bluePhoto:hover {
-    padding:1px;
+#des_blueImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_blueImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
@@ -163,13 +171,16 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(250%) contrast(1.4);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(300%) contrast(0.8);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_purplePhoto:hover {
-    padding:1px;
+#des_purpleImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_purpleImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
@@ -178,13 +189,16 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
     filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_greenPhoto:hover {
-    padding:1px;
+#des_greenImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_greenImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
@@ -193,13 +207,16 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_yellowPhoto:hover {
-    padding:1px;
+#des_yellowImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_yellowImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
@@ -208,28 +225,34 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-25deg) saturate(350%) contrast(1);
     filter: grayscale(100%) brightness(70%) sepia(95%) hue-rotate(-30deg) saturate(400%) contrast(0.8);
-    padding:1px;
-    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
-#des_orangePhoto:hover {
-    padding:1px;
+#des_orangeImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_orangeImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
 #des_invisiblePhoto {
     height: 50px;
-    -webkit-filter: brightness(10000%);
-    filter: brightness(10000%);
-    padding:1px;
-    border: 1px solid lightgrey;
+    -webkit-filter: brightness(100000%);
+    filter: brightness(100000%);
     margin-right: 20px;
 }
 
-#des_invisiblePhoto:hover {
-    padding:1px;
+#des_invisibleImgBorder {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgrey;
+}
+
+#des_invisibleImgBorder:hover {
     border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }

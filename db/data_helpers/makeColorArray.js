@@ -1,5 +1,5 @@
 
-const colorArr = [{"name": "Red", "id":"des_redPhoto"}, {"name": "Invisible", "id":"des_invisiblePhoto"}, {"name": "Blue", "id":"des_bluePhoto"}, {"name": "Green", "id":"des_greenPhoto"}, {"name": "Yellow", "id":"des_yellowPhoto"}, {"name": "Orange", "id":"des_orangePhoto"}, {"name": "Purple", "id":"des_purplePhoto"}];
+const colorArr = [{"name": "Red", "id":"des_redPhoto", "spanId":"des_redImgBorder"}, {"name": "Invisible", "id":"des_invisiblePhoto", "spanId":"des_invisibleImgBorder"}, {"name": "Blue", "id":"des_bluePhoto", "spanId":"des_blueImgBorder"}, {"name": "Green", "id":"des_greenPhoto", "spanId":"des_greenImgBorder"}, {"name": "Yellow", "id":"des_yellowPhoto", "spanId":"des_yellowImgBorder"}, {"name": "Orange", "id":"des_orangePhoto", "spanId":"des_orangeImgBorder"}, {"name": "Purple", "id":"des_purplePhoto", "spanId":"des_purpleImgBorder"}];
 
 const getRandomInt = function(min, max) {
   min = Math.ceil(min);
