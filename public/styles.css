@@ -137,7 +137,7 @@
 }
 
 #des_redImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -156,7 +156,7 @@
 }
 
 #des_blueImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -175,7 +175,7 @@
 }
 
 #des_purpleImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -194,7 +194,7 @@
 }
 
 #des_greenImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -213,7 +213,7 @@
 }
 
 #des_yellowImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -232,7 +232,7 @@
 }
 
 #des_orangeImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
@@ -251,7 +251,7 @@
 }
 
 #des_invisibleImgBorder {
-    display: inline-block
+    display: inline-block;
     height: 50px;
     width: 50px;
     border: 1px solid lightgrey;
