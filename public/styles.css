@@ -130,172 +130,240 @@
 }
 
 #des_redPhoto {
-    height: 50px;
     -webkit-filter: invert(40%) grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
-    margin-right: 10px;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_redImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_redImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_bluePhoto {
-    height: 50px;
     -webkit-filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
-    margin-right: 10px;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_blueImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_blueImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_purplePhoto {
-    height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(250%) contrast(1.4);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(300%) contrast(0.8);
-    margin-right: 10px;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_purpleImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_purpleImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_greenPhoto {
-    height: 50px;
     -webkit-filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
     filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
-    margin-right: 10px;
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_greenImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_greenImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_yellowPhoto {
-    height: 50px;
-    -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
-    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
-    margin-right: 10px;
-    margin-left: 10px;
+    -webkit-filter: grayscale(100%) brightness(70%) sepia(90%) hue-rotate(5deg) saturate(700%) contrast(0.7);
+    filter: grayscale(100%) brightness(100%) sepia(90%) hue-rotate(5deg) saturate(700%) contrast(0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_yellowImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_yellowImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_orangePhoto {
-    height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-25deg) saturate(350%) contrast(1);
     filter: grayscale(100%) brightness(70%) sepia(95%) hue-rotate(-30deg) saturate(400%) contrast(0.8);
-    margin-right: 10px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_orangeImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 #des_orangeImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
 #des_invisiblePhoto {
-    height: 50px;
-    -webkit-filter: brightness(100000%);
-    filter: brightness(100000%);
-    margin-right: 10px;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
+    filter: brightness(100000000%);
+    -webkit-filter: brightness(100000000%)
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 1000000%;
+    height: 1000000%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 #des_invisibleImgBorder {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 1px solid lightgrey;
-    margin-right: 10px;
+    position: relative;
+    width: 4.1vw;
+    height: 4.1vw;
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border: 1px solid #a2a6ac;
+    border-radius: 2px;
+    cursor: pointer;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 #des_invisibleImgBorder:hover {
-    border: 1px solid rgb(119, 118, 118);
+    border-color: #e77600;
+    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
     cursor: pointer;
 }
 
