@@ -150,16 +150,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_redImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -184,16 +182,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_blueImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -218,16 +214,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_purpleImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -252,16 +246,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_greenImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -286,16 +278,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_yellowImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -320,16 +310,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_orangeImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
@@ -354,16 +342,14 @@
     max-width: 50px;
     max-height: 50px;
     overflow: hidden;
-    border: 1px solid #a2a6ac;
-    border-radius: 2px;
+    border: 1px solid lightgray;
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 #des_invisibleImgBorder:hover {
-    border-color: #e77600;
-    box-shadow: 0 0 3px 3px rgba(228, 121, 17, .5);
+    border-color: darkgray;
     cursor: pointer;
 }
 
