@@ -46,48 +46,6 @@ const Title = (props) => {
           src={props.item.Photo[0]}>
           </img>
         ))}
-        {/* <img id="des_redPhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Red"
-        src={props.item.Photo[0]}>
-        </img>
-
-        <img id="des_bluePhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Blue"
-        src={props.item.Photo[0]}>
-        </img>
-
-        <img id="des_greenPhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Green"
-        src={props.item.Photo[0]}>
-        </img>
-
-        <img id="des_yellowPhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Yellow"
-        src={props.item.Photo[0]}>
-        </img>
-
-        <img id="des_orangePhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Orange"
-        src={props.item.Photo[0]}>
-        </img>
-
-        <img id="des_purplePhoto"
-        onMouseOver={(e) => props.colorPhotosOnHover(e)}
-        onMouseOut={(e) => props.colorPhotosOnLeave(e)}
-        className="Purple"
-        src={props.item.Photo[0]}>
-        </img> */}
-
       </span>
       </div>
     </div>
