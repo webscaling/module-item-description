@@ -134,12 +134,14 @@
     height: 50px;
     -webkit-filter: invert(40%) grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(200%) contrast(2);
     filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) contrast(0.8);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_redPhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -147,12 +149,14 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-180deg) saturate(300%) contrast(0.8);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_bluePhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -160,12 +164,14 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(250%) contrast(1.4);
     filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-115deg) saturate(300%) contrast(0.8);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_purplePhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -173,12 +179,14 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
     filter: grayscale(100%) brightness(60%) sepia(100%) hue-rotate(50deg) saturate(400%) contrast(0.8);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_greenPhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -186,12 +194,14 @@
     height: 50px;
     -webkit-filter: grayscale(100%) brightness(90%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_yellowPhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -199,12 +209,14 @@
     height: 50px;
     -webkit-filter: invert(20%) grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-25deg) saturate(350%) contrast(1);
     filter: grayscale(100%) brightness(70%) sepia(95%) hue-rotate(-30deg) saturate(400%) contrast(0.8);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_orangePhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 
@@ -212,12 +224,14 @@
     height: 50px;
     -webkit-filter: brightness(10000%);
     filter: brightness(10000%);
-    border: 2px solid lightgrey;
+    padding:1px;
+    border: 1px solid lightgrey;
     margin-right: 20px;
 }
 
 #des_invisiblePhoto:hover {
-    border: 2px solid rgb(119, 118, 118);
+    padding:1px;
+    border: 1px solid rgb(119, 118, 118);
     cursor: pointer;
 }
 

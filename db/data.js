@@ -1012,8 +1012,6 @@ const sellingPoints = [
   "HE TURNED TO STARE unseeingly at the unicorn"
 ];
 
-const colors = ["Red", "Blue", "Green", "Yellow", "Orange", "Purple"];
-
 const updateData = function(callback) {
   callback(
     data.map(object => {
