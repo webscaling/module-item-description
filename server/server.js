@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 2337;
+const port = 1337;
 const { itemDetail } = require('../db/db_server.js');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
