@@ -24,6 +24,8 @@ class App extends React.Component {
       },
       color: undefined,
     }
+
+    this.getClickedItem = this.getClickedItem.bind(this);
     this.reviewsOnClick = this.reviewsOnClick.bind(this);
     this.questionsOnClick = this.questionsOnClick.bind(this);
     this.colorPhotosOnHover = this.colorPhotosOnHover.bind(this);
@@ -36,6 +38,22 @@ class App extends React.Component {
       this.setState({
         magic: response.data,
         selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
+      })
+    })
+
+
+    window.addEventListener('clickedProduct', (event) => {
+      if (event.detail) {
+        this.getClickedItem(event.detail)
+      }
+    })
+  }
+
+  getClickedItem(inputId) {
+    axios.get(`http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=${inputId}`)
+    .then((response) => {
+      this.setState({
+        selectedItem: response.data,
       })
     })
   }
