@@ -40,6 +40,9 @@ class App extends React.Component {
         selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
       })
     })
+    .catch((err) => {
+      console.err(err)
+    })
 
 
     window.addEventListener('clickedProduct', (event) => {
@@ -53,8 +56,11 @@ class App extends React.Component {
     axios.get(`http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=${inputId}`)
     .then((response) => {
       this.setState({
-        selectedItem: response.data,
+        selectedItem: response.data[0],
       })
+    })
+    .catch((err) => {
+      console.err(err)
     })
   }
 
