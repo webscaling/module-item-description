@@ -24,7 +24,8 @@ const schema = new mongoose.Schema({
   numOfQuestions: Number,
   numOfRatings: Number,
   ratingImage: String,
-  colorChoices: Array
+  colorChoices: Array,
+  reviewBreakdown: Object,
 }, {collection: 'item-description-module' });
 
 const itemDetail = mongoose.model('itemDetail', schema);

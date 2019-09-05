@@ -15,12 +15,14 @@ app.use(bodyParser.json());
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "*");
   next();
 });
 
 
 /* Routes */
 app.post('/itemDescription', (req, res) => {
+  console.log("flare");
   const item = new itemDetail({
     _id: new mongoose.Types.ObjectId(),
     ProductId: req.body.ProductId,
@@ -34,6 +36,7 @@ app.post('/itemDescription', (req, res) => {
     numOfRatings: req.body.numOfRatings,
     ratingImage: req.body.ratingImage,
     colorChoices: req.body.colorChoices,
+    reviewBreakdown: req.body.reviewBreakdown,
   });
   item.save()
     .then(result => {
@@ -58,6 +61,18 @@ app.get('/itemDescription', (req, res) => {
       res.status(500).send( {error: err} );
     });
 });
+
+app.patch('/itemDescription', (req, res) => {
+  console.log(req);
+  itemDetail.updateOne()
+  .then(doc => {
+    res.status(200).send(doc);
+  })
+  .catch(err => {
+    console.err(err);
+    res.status(500).send( {error: err} );
+  });
+})
 
 
 /* Server Creation */

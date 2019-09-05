@@ -4,6 +4,7 @@ import axios from 'axios';
 import Title from './Title.jsx';
 import Price_Over from './Price_Over.jsx';
 import Price_Under from './Price_Under.jsx';
+import setRatingImage from '../../db/data_helpers/setRatingImage.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -37,11 +38,11 @@ class App extends React.Component {
     .then((response) => {
       this.setState({
         magic: response.data,
-        selectedItem: response.data[Math.floor(Math.random() * Math.floor(response.data.length - 1))]
+        selectedItem: response.data[66]
       })
     })
     .catch((err) => {
-      console.err(err)
+      console.error(err)
     })
 
 
@@ -50,9 +51,43 @@ class App extends React.Component {
         this.getClickedItem(event.detail)
       }
     })
+
+    window.addEventListener('reviewUpdate', (event) => {
+      console.log(event.detail);
+      if (event.detail) {
+        this.setState(prevState => {
+          let selectedItem = Object.assign({}, prevState.selectedItem);
+            selectedItem.numOfRatings = event.detail.numReviews;
+            selectedItem.reviewBreakdown =  event.detail.reviewBreakdown;
+            selectedItem.Rating = event.detail.reviewsAvg;
+            selectedItem.ratingImage = setRatingImage(event.detail.reviewsAvg);
+            return { selectedItem };
+        })
+        axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription')
+        .catch((err) => {
+          console.error(err)
+        })
+      }
+      console.log(this.state.selectedItem);
+    })
   }
+  // var event = new CustomEvent('reviewUpdate', {
+  //   detail: {
+  //     numReviews: 10,
+  //     reviewBreakdown: {
+  //       1:1,
+  //       2:2,
+  //       3:2,
+  //       4:2,
+  //       5:3
+  //     },
+  //     reviewsAvg: 3.4
+  //   }
+  // });
+
 
   getClickedItem(inputId) {
+    event.preventDefault();
     axios.get(`http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=${inputId}`)
     .then((response) => {
       this.setState({
@@ -60,7 +95,7 @@ class App extends React.Component {
       })
     })
     .catch((err) => {
-      console.err(err)
+      console.error(err)
     })
   }
 
