@@ -2,8 +2,6 @@ import React from 'react';
 import Price_Over from './Price_Over.jsx';
 import Price_Under from './Price_Under.jsx';
 import Reviews_Popover from './Reviews_Popover.jsx';
-import Popup from 'js-popup';
-
 
 const Title = (props) => {
 
@@ -14,16 +12,10 @@ const Title = (props) => {
     </div>
     <div id="des_reviewsRatingsQuestions">
       <span id="des_rating">
-        <span id="des_onHover">
-          {/* // onPointerOver={(eve) => props.reviewsOnHover(eve)}
-          // onPointerOut={(eve) => props.reviewsOnLeave(eve)} */}
-        <Popup
-          trigger={<span id="des_onHover"></span>}
-          position="bottom center"
-          on="hover"
+        <span id="des_onHover"
+          onPointerOver={(eve) => props.reviewsOnHover(eve)}
+          onPointerOut={(eve) => props.reviewsOnLeave(eve)} */}
         >
-          <Reviews_Popover item={props.item} />
-        </Popup>
           <span id="des_stars">
             <img id="des_stars_img" src={props.item.ratingImage}></img>
           </span>
