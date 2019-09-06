@@ -353,6 +353,10 @@
     cursor: pointer;
 }
 
+.des_ul {
+    padding: 0;
+}
+
 .des_sellingPoint {
     font-size: 14px;
     display: list-item;
