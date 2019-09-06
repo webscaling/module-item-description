@@ -81,7 +81,7 @@ class App extends React.Component {
             selectedItem.numOfQuestions = event.detail.numQuestions;
             return { selectedItem };
         }, () => {
-          axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
+          axios.put('http://ec2-52-15-133-188.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
           .catch((err) => {
             console.error(err)
           })
@@ -92,7 +92,7 @@ class App extends React.Component {
 
   getClickedItem(inputId) {
     event.preventDefault();
-    axios.get(`http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=${inputId}`)
+    axios.get(`http://ec2-52-15-133-188.us-east-2.compute.amazonaws.com/itemDescription?ProductId=${inputId}`)
     .then((response) => {
       this.setState({
         selectedItem: response.data[0],
