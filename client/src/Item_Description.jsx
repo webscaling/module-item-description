@@ -39,7 +39,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=66')
+    axios.get('http://ec2-52-15-133-188.us-east-2.compute.amazonaws.com//itemDescription?ProductId=66')
     .then((response) => {
       this.setState({
         selectedItem: response.data[0]
@@ -66,7 +66,7 @@ class App extends React.Component {
             selectedItem.ratingImage = setRatingImage(event.detail.reviewsAvg);
             return { selectedItem };
         }, () => {
-          axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
+          axios.put('http://ec2-52-15-133-188.us-east-2.compute.amazonaws.com//itemDescription', this.state.selectedItem)
           .catch((err) => {
             console.error(err)
           })
