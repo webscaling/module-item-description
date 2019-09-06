@@ -26,7 +26,7 @@ class App extends React.Component {
         "colorChoices": []
       },
       color: "Natural",
-      popover: false,
+      popover: "#des_reviewsHoverHide",
     }
 
     this.getClickedItem = this.getClickedItem.bind(this);
@@ -134,14 +134,14 @@ class App extends React.Component {
   reviewsOnHover(event) {
     event.preventDefault();
     this.setState({
-      popover: true,
+      popover: "#des_reviewsHover",
     });
   }
 
   reviewsOnLeave(event) {
     event.preventDefault();
     this.setState({
-      popover: false,
+      popover: "#des_reviewsHoverHide",
     });
   }
 

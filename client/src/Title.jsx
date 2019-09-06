@@ -13,7 +13,7 @@ const Title = (props) => {
     </div>
     <div id="des_reviewsRatingsQuestions">
       <span id="des_rating">
-        <span {(props.popover) ? id="des_reviewsHover" : id="des_reviewsHoverHide"}
+        <span id={props.popover}>
           onMouseOver={(e) => props.reviewsOnHover(e)}
           onMouseOut={(e) => props.reviewsOnLeave(e)}
           >
