@@ -62,7 +62,7 @@ app.get('/itemDescription', (req, res) => {
     });
 });
 
-app.patch('/itemDescription', (req, res) => {
+app.put('/itemDescription', (req, res) => {
   console.log(req);
   itemDetail.updateOne()
   .then(doc => {
