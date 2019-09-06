@@ -66,10 +66,10 @@ app.put('/itemDescription', (req, res) => {
   console.log(req);
   itemDetail.updateOne(
     { "ProductId" : req.body.ProductId },
-    { "numOfRatings" : req.body.numOfRatings;
-      "reviewBreakdown" : req.body.reviewBreakdown;
-      "Rating" : req.body.Rating;
-      "ratingImage" : req.body.ratingImage;
+    { "numOfRatings" : req.body.numOfRatings,
+      "reviewBreakdown" : req.body.reviewBreakdown,
+      "Rating" : req.body.Rating,
+      "ratingImage" : req.body.ratingImage,
     })
   .then(doc => {
     res.status(200).send(doc);
