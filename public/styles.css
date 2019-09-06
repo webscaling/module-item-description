@@ -356,7 +356,7 @@
 .des_sellingPoint {
     font-size: 14px;
     display: list-item;
-    padding-left: -100px;
+    padding: 0;
     list-style-type: disc;
     list-style-position: outside;
 }
