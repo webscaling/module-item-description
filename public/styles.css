@@ -375,7 +375,6 @@
 }
 
 #des_reviewsHover {
-    display: show;
     position: fixed;
     z-index: 1;
     left: 0;

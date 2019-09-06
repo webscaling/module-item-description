@@ -13,17 +13,19 @@ const Title = (props) => {
     </div>
     <div id="des_reviewsRatingsQuestions">
       <span id="des_rating">
-        <span id={props.popover}
-          onPointerOver={(e) => props.reviewsOnHover(e)}
-          onPointerOut={(e) => props.reviewsOnLeave(e)}
-          >
-          {/* <Reviews_Popover item={props.item} /> */}
+        <span id="onHover"
+          onPointerOver={(eve) => props.reviewsOnHover(eve)}
+          onPointerOut={(eve) => props.reviewsOnLeave(eve)}
+        >
           <span id="des_stars">
             <img id="des_stars_img" src={props.item.ratingImage}></img>
           </span>
           <span>
             <img id="des_expand_arrow" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/expand_arrow.png"></img>
           </span>
+        </span>
+        <span id={props.popover}>
+          <Reviews_Popover item={props.item} />
         </span>
         <span id="des_numOfRatings" onClick={props.reviewsOnClick}>
           {props.item.numOfRatings} customer reviews
