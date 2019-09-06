@@ -358,7 +358,7 @@
     display: list-item;
     padding: -40px;
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
 .des_blue {
