@@ -118,30 +118,26 @@ class App extends React.Component {
   }
 
   colorPhotosOnHover(event) {
-    event.preventDefault();
     this.setState({
       color: event.target.className,
     });
   }
 
   colorPhotosOnLeave(event) {
-    event.preventDefault();
     this.setState({
       color: "Natural",
     });
   }
 
   reviewsOnHover(event) {
-    event.preventDefault();
     this.setState({
-      popover: "#des_reviewsHover",
+      popover: "des_reviewsHover",
     });
   }
 
   reviewsOnLeave(event) {
-    event.preventDefault();
     this.setState({
-      popover: "#des_reviewsHoverHide",
+      popover: "des_reviewsHoverHide",
     });
   }
 
