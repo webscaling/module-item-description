@@ -100,12 +100,16 @@ class App extends React.Component {
 
   reviewsOnClick(event) {
     event.preventDefault();
-    console.log("goes to reviews section");
+    const myElement = document.getElementById('reviewsApp');
+    const topPos = myElement.offsetTop;
+    window.scrollTo(0, topPos);
   }
 
   questionsOnClick(event) {
     event.preventDefault();
-    console.log("goes to questions section");
+    const myElement = document.getElementById('qa-app');
+    const topPos = myElement.offsetTop;
+    window.scrollTo(0, topPos);
   }
 
   colorPhotosOnHover(event) {
