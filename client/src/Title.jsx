@@ -17,7 +17,7 @@ const Title = (props) => {
           onMouseOver={(e) => props.reviewsOnHover(e)}
           onMouseOut={(e) => props.reviewsOnLeave(e)}
           >
-          <Reviews_Popover item={props.item} />
+          {/* <Reviews_Popover item={props.item} /> */}
           <span id="des_stars">
             <img id="des_stars_img" src={props.item.ratingImage}></img>
           </span>
