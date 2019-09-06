@@ -13,7 +13,7 @@ const Title = (props) => {
     </div>
     <div id="des_reviewsRatingsQuestions">
       <span id="des_rating">
-        <span id="onHover"
+        <span id="des_onHover"
           onPointerOver={(eve) => props.reviewsOnHover(eve)}
           onPointerOut={(eve) => props.reviewsOnLeave(eve)}
         >

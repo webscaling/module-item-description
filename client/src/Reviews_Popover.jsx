@@ -2,7 +2,7 @@ import React from 'react';
 
 const Reviews_Popover = (props) => {
   return (
-    <div id="popoverContent">
+    <div id="des_popoverContent">
       {props.item.reviewBreakdown}
     </div>
   )
