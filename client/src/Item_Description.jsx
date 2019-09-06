@@ -23,7 +23,7 @@ class App extends React.Component {
         "ratingImage": '',
         "colorChoices": []
       },
-      color: undefined,
+      color: "Natural",
     }
 
     this.getClickedItem = this.getClickedItem.bind(this);
@@ -34,11 +34,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription')
+    axios.get('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription?ProductId=66')
     .then((response) => {
       this.setState({
-        magic: response.data,
-        selectedItem: response.data[66]
+        selectedItem: response.data[0]
       })
     })
     .catch((err) => {
@@ -69,23 +68,8 @@ class App extends React.Component {
           })
         })
       }
-      console.log(this.state.selectedItem);
     })
   }
-  // var event = new CustomEvent('reviewUpdate', {
-  //   detail: {
-  //     numReviews: 10,
-  //     reviewBreakdown: {
-  //       1:1,
-  //       2:2,
-  //       3:2,
-  //       4:2,
-  //       5:3
-  //     },
-  //     reviewsAvg: 3.4
-  //   }
-  // });
-
 
   getClickedItem(inputId) {
     event.preventDefault();
@@ -120,7 +104,7 @@ class App extends React.Component {
   colorPhotosOnLeave(event) {
     event.preventDefault();
     this.setState({
-      color: undefined,
+      color: "Natural",
     });
   }
 
