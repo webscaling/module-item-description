@@ -53,7 +53,7 @@ const Title = (props) => {
       </div>
     </div>
     <div id="des_sellingPoints">
-      <ul>
+      <ul className="des_ul">
         {props.item.sellingPoints.map((point) => (
           <li key={point} className="des_sellingPoint">{point}</li>
         ))}

@@ -52,7 +52,6 @@ class App extends React.Component {
     })
 
     window.addEventListener('reviewUpdate', (event) => {
-      console.log(event.detail);
       if (event.detail) {
         this.setState(prevState => {
           let selectedItem = Object.assign({}, prevState.selectedItem);
@@ -60,6 +59,21 @@ class App extends React.Component {
             selectedItem.reviewBreakdown =  event.detail.reviewBreakdown;
             selectedItem.Rating = event.detail.reviewsAvg;
             selectedItem.ratingImage = setRatingImage(event.detail.reviewsAvg);
+            return { selectedItem };
+        }, () => {
+          axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
+          .catch((err) => {
+            console.error(err)
+          })
+        })
+      }
+    })
+
+    window.addEventListener('questionUpdate', (event) => {
+      if (event.detail) {
+        this.setState(prevState => {
+          let selectedItem = Object.assign({}, prevState.selectedItem);
+            selectedItem.numOfQuestions = event.detail.numQuestions;
             return { selectedItem };
         }, () => {
           axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
