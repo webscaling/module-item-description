@@ -4,7 +4,9 @@ import axios from 'axios';
 import Title from './Title.jsx';
 import Price_Over from './Price_Over.jsx';
 import Price_Under from './Price_Under.jsx';
+import Reviews_Popover from './Reviews_Popover.jsx';
 import setRatingImage from '../../db/data_helpers/setRatingImage.js';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -24,6 +26,7 @@ class App extends React.Component {
         "colorChoices": []
       },
       color: "Natural",
+      popover: "#des_reviewsHoverHide",
     }
 
     this.getClickedItem = this.getClickedItem.bind(this);
@@ -31,6 +34,8 @@ class App extends React.Component {
     this.questionsOnClick = this.questionsOnClick.bind(this);
     this.colorPhotosOnHover = this.colorPhotosOnHover.bind(this);
     this.colorPhotosOnLeave = this.colorPhotosOnLeave.bind(this);
+    this.reviewsOnHover = this.colorPhotosOnHover.bind(this);
+    this.reviewsOnLeave = this.colorPhotosOnLeave.bind(this);
   }
 
   componentDidMount() {
@@ -126,6 +131,20 @@ class App extends React.Component {
     });
   }
 
+  reviewsOnHover(event) {
+    event.preventDefault();
+    this.setState({
+      popover: "#des_reviewsHover",
+    });
+  }
+
+  reviewsOnLeave(event) {
+    event.preventDefault();
+    this.setState({
+      popover: "#des_reviewsHoverHide",
+    });
+  }
+
   render() {
     return (
       <div id="des_itemDescriptionModule">
@@ -135,7 +154,10 @@ class App extends React.Component {
           questionsOnClick={this.questionsOnClick}
           colorPhotosOnHover={this.colorPhotosOnHover}
           colorPhotosOnLeave={this.colorPhotosOnLeave}
+          reviewsOnHover={this.reviewsOnHover}
+          reviewsOnLeave={this.reviewsOnLeave}
           color={this.state.color}
+          popover={this.state.popover}
         />
       </div>
     )
