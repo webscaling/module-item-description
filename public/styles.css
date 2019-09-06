@@ -355,6 +355,9 @@
 
 .des_sellingPoint {
     font-size: 14px;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .des_blue {
