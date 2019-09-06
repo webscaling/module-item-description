@@ -63,7 +63,7 @@ class App extends React.Component {
             selectedItem.ratingImage = setRatingImage(event.detail.reviewsAvg);
             return { selectedItem };
         })
-        axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription')
+        axios.put('http://ec2-18-219-43-62.us-east-2.compute.amazonaws.com/itemDescription', this.state.selectedItem)
         .catch((err) => {
           console.error(err)
         })
