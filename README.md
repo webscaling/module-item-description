@@ -19,11 +19,17 @@ Link - http://ec2-18-220-131-48.us-east-2.compute.amazonaws.com/
 ## Related Projects
 
 Nav & Search Bar - https://github.com/shazamazon/module-nav-search-bar
+
 Price, Fulfillment, Add To Cart, etc.. - https://github.com/shazamazon/module-cart
+
 Related Items Carousel - https://github.com/shazamazon/module-the-best-carousel
+
 Browsing History Carousel - https://github.com/shazamazon/module-browsing-history-carousel
+
 Photo Gallery - https://github.com/shazamazon/module-photo-gallery
+
 Q&A - https://github.com/shazamazon/modules-qa
+
 Footer - https://github.com/shazamazon/module-footer
 
 ## Table of Contents
