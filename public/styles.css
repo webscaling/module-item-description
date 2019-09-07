@@ -81,6 +81,7 @@
 }
 
 #des_expand_arrow {
+    display: none;
     height: 20px;
 }
 

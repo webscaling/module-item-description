@@ -37,7 +37,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://ec2-18-220-131-48.us-east-2.compute.amazonaws.com/itemDescription?ProductId=66')
+    axios.get('http://ec2-18-220-131-48.us-east-2.compute.amazonaws.com/itemDescription?ProductId=38')
     .then((response) => {
       this.setState({
         selectedItem: response.data[0]
