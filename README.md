@@ -8,9 +8,12 @@ This is a front-end heavy project, as we only had to manage a database of 105 it
 ## My Work
 
 My Proxy Server - https://github.com/shazamazon/proxy-item-description
+
 Link - http://ec2-13-58-218-116.us-east-2.compute.amazonaws.com/
 
 Item Description - https://github.com/shazamazon/module-item-description
+
+Link - http://ec2-18-220-131-48.us-east-2.compute.amazonaws.com/
 
 
 ## Related Projects
