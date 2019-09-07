@@ -34,8 +34,6 @@ class App extends React.Component {
     this.questionsOnClick = this.questionsOnClick.bind(this);
     this.colorPhotosOnHover = this.colorPhotosOnHover.bind(this);
     this.colorPhotosOnLeave = this.colorPhotosOnLeave.bind(this);
-    this.reviewsOnHover = this.reviewsOnHover.bind(this);
-    this.reviewsOnLeave = this.reviewsOnLeave.bind(this);
   }
 
   componentDidMount() {
@@ -150,8 +148,6 @@ class App extends React.Component {
           questionsOnClick={this.questionsOnClick}
           colorPhotosOnHover={this.colorPhotosOnHover}
           colorPhotosOnLeave={this.colorPhotosOnLeave}
-          reviewsOnHover={this.reviewsOnHover}
-          reviewsOnLeave={this.reviewsOnLeave}
           color={this.state.color}
           popover={this.state.popover}
         />
