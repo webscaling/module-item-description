@@ -6,7 +6,6 @@ import Price_Over from './Price_Over.jsx';
 import Price_Under from './Price_Under.jsx';
 import Reviews_Popover from './Reviews_Popover.jsx';
 import setRatingImage from '../../db/data_helpers/setRatingImage.js';
-import Popup from 'js-popup';
 
 
 class App extends React.Component {
@@ -130,17 +129,17 @@ class App extends React.Component {
     });
   }
 
-  reviewsOnHover(event) {
-    this.setState({
-      popover: "des_reviewsHover",
-    });
-  }
+  // reviewsOnHover(event) {
+  //   this.setState({
+  //     popover: "des_reviewsHover",
+  //   });
+  // }
 
-  reviewsOnLeave(event) {
-    this.setState({
-      popover: "des_reviewsHoverHide",
-    });
-  }
+  // reviewsOnLeave(event) {
+  //   this.setState({
+  //     popover: "des_reviewsHoverHide",
+  //   });
+  // }
 
   render() {
     return (

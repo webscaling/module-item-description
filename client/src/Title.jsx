@@ -18,9 +18,6 @@ const Title = (props) => {
           <span>
             <img id="des_expand_arrow" src="https://shazamazon.s3.us-east-2.amazonaws.com/icons/expand_arrow.png"></img>
           </span>
-        <span id={props.popover}>
-          <Reviews_Popover item={props.item} />
-        </span>
         <span id="des_numOfRatings" onClick={props.reviewsOnClick}>
           {props.item.numOfRatings} customer reviews
         </span>
