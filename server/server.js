@@ -1,9 +1,13 @@
 const express = require('express');
-const app = express();
-const port = 1337;
-const { itemDetail } = require('../db/db_server.js');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const timerFn = require('timer-node');
+const timer = timerFn('test-timer');
+// const { itemDetail } = require('../db/db_server.js');
+const query = require('../db/queries.js');
+
+const app = express();
+const port = 1337;
 
 
 
@@ -22,7 +26,6 @@ app.use(function(req, res, next) {
 
 /* Routes */
 app.post('/itemDescription', (req, res) => {
-  console.log("flare");
   const item = new itemDetail({
     _id: new mongoose.Types.ObjectId(),
     ProductId: req.body.ProductId,
@@ -48,9 +51,26 @@ app.post('/itemDescription', (req, res) => {
       console.error(err);
       res.status(500).send({ error: err });
     });
- });
+});
+
+app.post('/seedProductsTable', (req, res) => {
+  timer.start();
+  query.seedProductsTable(req, res, () => {
+    timer.stop();
+    console.log(timer.seconds());
+  });
+});
+
+app.post('/seedColorsTable', (req, res) => {
+  timer.start();
+  query.seedColorsTable(req, res, () => {
+    timer.stop();
+    console.log(timer.seconds());
+  });
+});
 
 app.get('/itemDescription', (req, res) => {
+  /*
   itemDetail.find(req.query.ProductId === undefined ? null : { ProductId: req.query.ProductId })
     .exec()
     .then(doc => {
@@ -60,6 +80,8 @@ app.get('/itemDescription', (req, res) => {
       console.err(err);
       res.status(500).send( {error: err} );
     });
+  */
+  query.getItems(req.query.ProductId, res);
 });
 
 app.put('/itemDescription', (req, res) => {
