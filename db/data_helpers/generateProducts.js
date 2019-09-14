@@ -5,7 +5,7 @@ const timer = timerFn('test-timer');
 
 timer.start();
 
-const numberOfProducts = 1000000;
+const numberOfProducts = 10000000;
 const products = [];
 
 for (let i = 0; i < numberOfProducts; i++) {
@@ -35,4 +35,4 @@ csvWriter
 
 timer.stop();
 
-console.log(timer.milliseconds());
+console.log(timer.seconds());
