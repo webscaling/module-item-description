@@ -37,7 +37,7 @@
     "pm2": "^3.5.1",
     "prop-types": "^15.7.2",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.12"
   },
   "version": "1.0.0",
   "main": "(server.js)",
